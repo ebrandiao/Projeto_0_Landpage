@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+#container {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+    background: url(./manguinhos.jpg);
+    background-size: cover;
+}
+#lado_direito {
+    background-color: #ae9d08;
+    /* background-color: #fd746c; */
+    padding: 30px;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+#lado_esquerdo {
+    /* background: url(./manguinhos.jpg); */ 
+    display: flex;
+    flex-direction: row;
+}
+#texto_chamativo {
+    background-color: rgb(210 210 210 / 75%);
+    margin: 50px;
+    /* margin-top: 100px; */
+    padding: 30px;
+    border-radius: 15px;
+}
+#texto_chamativo > h2 {
+    margin-top: 30px;
+}
+#texto_chamativo > h3 {
+    margin-top: 30px;
+}
+#texto_chamativo > h4 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#select_garagem {
+    width: 100%;
+}
+#botao_enviar {
+    /* margin: 80px; */
+    margin-top: 20px;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    float: right;
+    cursor: pointer;
+}
+#botao_enviar:hover {
+    font-weight: bold;
+    transform: scale(1.1);
+}
+#form_texto {
+    width: 100%;
+}
+.campo_formulario {
+    margin-top: 15px;
+    width: 100%;
+    /* height: 100vh; */
+    /* padding: 30px; */
+}
+.campo_formulario label,
+.campo_formulario input {
+    display: block;
+    width: 100%;
+}
+.campo_formulario:nth-child(3) {
+
+}
+}
+@media screen and (max-width:765px) {
+    #container {
+        flex-direction: column;
+    }
+    #texto_chamativo > h1 {
+        font-size: 1.5em;
+    }
+}

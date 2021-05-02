@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Lançamento</title>
+        <!--
+            Bootcamp DEV Front End com React.
+            Projeto = 0 Landpage - Lançamento de apartamento.
+            Aluno = Eduardo Brandiao.
+        -->
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="lado_direito">
+                <form
+                    onsubmit="event.preventDefault();"
+                    id="formulario-assinatura"
+                    action="./mensagem.html">
+                    <p>
+                        Preencha o formulário abaixo, em breve nossa equipe de vendas entrará em contato. Boa sorte no sorteio!!!
+                    </p>
+                    <div class="campo_formulario">
+                        <label>Por favor, digite seu nome completo.</label>
+                        <input 
+                            name="campo_name"
+                            type="text"
+                            placeholder="Nome completo.">
+                    </div>
+                    <div class="campo_formulario">
+                        <label>Por favor, digite seu e-mail.</label>
+                        <input
+                            id="campo_email" 
+                            name="campo_email"
+                            type="email"
+                            placeholder="e-mail@e-mail.com.">
+                    </div>
+                    <div class="campo_formulario">
+                        <label>Por favor, digite seu endereço.</label>
+                        <input
+                            name="endereço"
+                            type="text"
+                            placeholder="Digite seu endereço aqui.">
+                    </div>
+                    <div class="campo_formulario">
+                        <label>Por favor, digite o número do seu telefone.</label>
+                        <input
+                            name="telefone"
+                            type="tel"
+                            placeholder="(xx) xxxxx-xxxx">
+                    </div>
+                    <div class="campo_formulario">
+                        <label>Informe a opção de vaga de garagem.</label>
+                        <select id="select_garagem">
+                            <option>Seleciona uma opção</option>
+                            <option>1 vaga de garagem</option>
+                            <option>2 vagas de garagem</option>
+                        </select>
+                    </div>
+                    <div class="campo_formulario">
+                        <label>Informe o melhor dia para contato.</label>
+                        <select id="select_garagem">
+                            <option>Selecione uma opção</option>
+                            <option>Segunda-feira</option>
+                            <option>Terça-feira</option>
+                            <option>Quarta-feira</option>
+                            <option>Quinta-feira</option>
+                            <option>Sexta-feira</option>
+                            <option>Sábado</option>
+                        </select>
+                    </div>
+                    <div class="campo_formulario">
+                        <label>Informe o melhor período para contato.</label>
+                        <select id="select_garagem">
+                            <option>Selecione uma opção</option>
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                    </div>
+                    <button id="botao_enviar">
+                        Enviar!
+                    </button>
+                </form>
+            </div>
+            <div id="Lado_esquerdo">
+                <div id="texto_chamativo">
+                    <h1>
+                        Apartamentos de 3 quartos com 2 suites de frente para o mar com garagem privativa, 
+                        clube privativo e segurança 24hr.
+                    </h1>
+                    <h2>Garanta condições especiais de financiamento. 
+                        Aproveite a promoção e ganhe todos os móveis e eletros da cozinha e 
+                        varanda gourmet.</h2>
+                    <h3>Opções de vagas de garagem:</h3>
+                    <ul>
+                        <li>1 vaga coberta.</li>
+                        <li>2 vagas coberta.</li>
+                        <li>1 vaga compartilhada.</li>
+                    </ul>
+                    <h4>
+                        Concorra a 1 apartamento mobiliado com 1 jetta 0km na garagem. Cadastre-se agora.
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <script src="./index.js"></script>
+        <noscript>Desculpe, o seu navegador não suporte o JavaScript.</noscript>
+    </body>
+</html>

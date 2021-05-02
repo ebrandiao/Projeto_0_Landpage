@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background: url(./manguinhos.jpg);
+    background-size: cover;
+}
+#boxe_mensagem {
+    width: 100%;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 1.5em;
+    padding-left: 400px;
+    background-color: rgb(210 210 210 / 75%);
+}
+#icone_enviado {
+    width: 50px;
+    margin-bottom: 20px;
+}
+#texto_chamativo {
+    background-color: rgb(210 210 210 / 75%);
+    margin: 50px;
+    margin-top: 100px;
+    padding: 30px;
+    border-radius: 15px;
+}
+#texto_chamativo > h1 {
+    margin-top: 30px;
+}
